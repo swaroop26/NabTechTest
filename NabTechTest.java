@@ -149,7 +149,8 @@ public class NabTechTest {
         } else if(input.equals(CMD.help.name())) {
             processHelp();
         } else {
-            logger.log(Level.INFO, "Can not recognise the command : ''{0}'' . Enter ''Help'' to get the list of commands.", input);
+            logger.log(Level.WARNING, "Can not recognise the command : ''{0}'' . Enter ''Help'' to get the list of commands.", input);
+            logger.log(Level.INFO,"Please enter command:");
         }
     }
 
